@@ -1,4 +1,4 @@
-# Jusdge a Book
+# Judge a Book
 
 ## About this project 
 
