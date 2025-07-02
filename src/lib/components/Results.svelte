@@ -29,7 +29,7 @@
 <div class="border-secondary flex gap-4 rounded-3xl border p-6">
 	<img class="w-40" src={previewUrl} alt="book cover" />
 	<div class="flex flex-col justify-center">
-		<p class="text-secondary-content text-center text-2xl">
+		<p class="text-primary text-center text-2xl">
 			{message}
 		</p>
 	</div>
