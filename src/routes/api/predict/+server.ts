@@ -1,4 +1,4 @@
-import { ROBOFLOW_API_KEY } from '$env/static/private'
+import { env } from '$env/dynamic/private'
 import { error, json } from '@sveltejs/kit'
 
 import type { RequestHandler } from './$types'
@@ -44,7 +44,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	const modelUrl =
 		'https://serverless.roboflow.com/infer/workflows/franklin-cappadora-solutions/simply-classify'
-	const apiKey = ROBOFLOW_API_KEY
+	const apiKey = env.ROBOFLOW_API_KEY
 
 	const body = {
 		api_key: apiKey,

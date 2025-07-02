@@ -18,7 +18,7 @@
 		}
 		if (results?.prediction == 'dislike') {
 			if (results.confidence > 0.699) {
-				return 'You will leterally hate this book...'
+				return 'You will literally hate this book...'
 			} else {
 				return "You probably won't like this book :/"
 			}
