@@ -1,4 +1,4 @@
-<div class="navbar bg-base-100 shadow-sm">
+<div class="navbar bg-secondary rounded-4xl shadow-sm">
 	<div class="navbar-start">
 		<!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
 	</div>
