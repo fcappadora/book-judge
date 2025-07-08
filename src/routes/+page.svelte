@@ -9,6 +9,7 @@
 	let loading = $state(false)
 
 	async function handleFileUpload(event: Event) {
+		errorMessage = null
 		selectedImage = null
 		results = null
 		previewUrl = null
@@ -43,8 +44,12 @@
 				})
 
 				const data: PredictResponse = await res.json()
-				results = data
-				selectedImage = null
+				if (data?.prediction) {
+					results = data
+					selectedImage = null
+				} else {
+					console.error('bad response from sever', data)
+				}
 			} catch (err) {
 				errorMessage = 'Error making prediction'
 				console.error(err)

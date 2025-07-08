@@ -71,5 +71,6 @@ export const POST: RequestHandler = async ({ request }) => {
 	} catch (err: unknown) {
 		console.error('no bueno:', JSON.stringify(err))
 		error(400, err instanceof Error ? err.message : 'Something went wrong.')
+		return json(err)
 	}
 }
